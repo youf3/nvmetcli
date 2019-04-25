@@ -543,7 +543,7 @@ class Namespace(CFSNode):
                 raise CFSError("Need NSID for lookup")
 
             nsids = [n.nsid for n in subsystem.namespaces]
-            for index in xrange(1, self.MAX_NSID + 1):
+            for index in range(1, self.MAX_NSID + 1):
                 if index not in nsids:
                     nsid = index
                     break
